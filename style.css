@@ -153,12 +153,12 @@ footer {
   color: rgb(230, 230, 230);
 }
 
-@media screen and (width < 1024px) {
+@media screen and (width <= 1024px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (width < 736px) {
+@media screen and (width <= 480px) {
   .container {
     grid-template-columns: 1fr;
     margin: 0;
@@ -178,7 +178,7 @@ footer {
   font-size: 125%;
 }
 
-@media screen and (width < 736px) {
+@media screen and (width <= 480px) {
   .about {
     padding: 5% 5%;
   }
@@ -217,7 +217,7 @@ footer {
   padding: 0% 2% 3% 3%;
 }
 
-@media screen and (width < 736px) {
+@media screen and (width <= 480px) {
   .recipe-page {
     padding: 5% 5%;
   }
