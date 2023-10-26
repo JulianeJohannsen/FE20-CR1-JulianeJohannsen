@@ -1,13 +1,13 @@
 // universal style start
+$first-color: rgb(50, 50, 50);
+$text-color-dark-bg: rgb(230, 230, 230);
+$third-color: rgb(190, 140, 40);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
 }
-
-$first-color: rgb(50, 50, 50);
-$text-color-dark-bg: rgb(230, 230, 230);
-$third-color: rgb(190, 140, 40);
 
 .links {
     text-decoration: none;
@@ -117,32 +117,6 @@ footer {
 }
 // footer end
 
-// hero section start
-.hero {
-    height: 50dvh;
-    background-color: $first-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    img {
-        height: 100%;
-        opacity: 0.5;
-        object-fit: cover;
-    }
-
-    h1 {
-        position: absolute;
-        padding: 15px;
-        width: 100%;
-        text-align: center;
-        background-color: transparentize($first-color, $amount: 0.3);
-        color: $text-color-dark-bg;
-    }
-}
-// hero section end
-
 // page home start
 .container {
     display: grid;
@@ -192,81 +166,28 @@ footer {
 // page home end
 
 
-// page about start
-.about {
-    padding: 2% 10% 5% 10%;
-
-    h1 {
-        padding: 2% 1%;
-        border-bottom: 2px solid $first-color;
-    }
-
-    p {
-        padding: 1%;
-    }
-
-    p:first-letter {
-        font-size: 125%;
-    }
-}
-
-@media screen and (width <= 480px) {
-    .about {
-        padding: 5% 5%;
-    }    
-}
-// page about end
-
-// page mrecipe start
-.recipe-page {
-    padding: 2% 10% 5% 10%;
-
-    h1 {
-        padding: 2% 1%;
-        border-bottom: 2px solid $first-color;
-    }
-
-    h3 {
-        padding-top: 2%;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-
-    li {
-        padding-top: 5px;
-        padding-bottom: 5px;
-       
-    }
-}
-
-.ingredients {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0% 2% 3% 3%;
-    border-bottom: 1px solid $first-color;
+// hero section about and recipe page start
+.hero {
+    height: 50dvh;
+    background-color: $first-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
     img {
-        width: 100%;
-        box-shadow: 1px 1px 5px 0px $first-color;
+        height: 100%;
+        opacity: 0.5;
         object-fit: cover;
     }
-}
 
-.directions {
-    padding: 0% 2% 3% 3%;  
-}
-
-@media screen and (width <= 480px) {
-    .recipe-page {
-        padding: 5% 5%;
+    h1 {
+        position: absolute;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        background-color: transparentize($first-color, $amount: 0.3);
+        color: $text-color-dark-bg;
     }
-
-    .ingredients {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    img {
-        order: -1;
-    }    
 }
-// page mrecipe end
+// hero section end

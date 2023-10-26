@@ -1,0 +1,19 @@
+.about {
+  padding: 2% 10% 5% 10%;
+}
+.about h1 {
+  padding: 2% 1%;
+  border-bottom: 2px solid rgb(50, 50, 50);
+}
+.about p {
+  padding: 1%;
+}
+.about p:first-letter {
+  font-size: 125%;
+}
+
+@media screen and (width <= 480px) {
+  .about {
+    padding: 5% 5%;
+  }
+}/*# sourceMappingURL=aboutstyle.css.map */

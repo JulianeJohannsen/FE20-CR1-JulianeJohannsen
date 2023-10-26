@@ -1,0 +1,53 @@
+@use "../style.scss";
+
+.recipe-page {
+    padding: 2% 10% 5% 10%;
+
+    h1 {
+        padding: 2% 1%;
+        border-bottom: 2px solid $first-color;
+    }
+
+    h3 {
+        padding-top: 2%;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+       
+    }
+}
+
+.ingredients {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0% 2% 3% 3%;
+    border-bottom: 1px solid $first-color;
+
+    img {
+        width: 100%;
+        box-shadow: 1px 1px 5px 0px $first-color;
+        object-fit: cover;
+    }
+}
+
+.directions {
+    padding: 0% 2% 3% 3%;  
+}
+
+@media screen and (width <= 480px) {
+    .recipe-page {
+        padding: 5% 5%;
+    }
+
+    .ingredients {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    img {
+        order: -1;
+    }    
+}
